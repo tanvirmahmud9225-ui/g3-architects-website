@@ -26,7 +26,6 @@
 }
 
 .container-2 {
-    width: 69%;
     max-width: 1320px;
     margin: 0 auto;
 }
@@ -47,6 +46,12 @@
 
 main>section {
     padding-top: 130px;
+}
+
+.section-title{
+    font-size: 2.813rem;
+    font-weight: bold;
+    padding-bottom: 24px;
 }
 
 
@@ -121,7 +126,7 @@ header {
 .teams {
     align-items: center;
     gap: 73px;
-    max-width: 1318px;
+    /* max-width: 1318px; */
 }
 
 .team-img-container {
@@ -136,12 +141,6 @@ header {
 
 .our-features{
     max-width: 537px;
-}
-
-.features-title{
-    font-size: 2.813rem;
-    font-weight: bold;
-    padding-bottom: 24px;
 }
 
 .primary-span{
