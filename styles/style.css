@@ -46,7 +46,7 @@
 }
 
 main>section {
-    margin-top: 130px;
+    padding-top: 130px;
 }
 
 
@@ -112,8 +112,49 @@ header {
 .banner-container img {
     width: 100%;
     max-width: 1440px;
+    padding-bottom: 30px;
 }
 
+
+/* team and feature related styles */
+
+.teams {
+    align-items: center;
+    gap: 73px;
+    max-width: 1318px;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.team-img-container img {
+    max-width: 100%;
+}
+
+.our-features{
+    max-width: 537px;
+}
+
+.features-title{
+    font-size: 2.813rem;
+    font-weight: bold;
+    padding-bottom: 24px;
+}
+
+.primary-span{
+    color: #727272;
+    font-weight: 500;
+}
+.secondary-span{
+    color: #FF900E;
+}
+.features-description{
+    line-height: 26px;
+    padding-bottom: 30px;
+}
 
 /* Responsive Design */
 @media screen and (max-width:576px) {
@@ -121,9 +162,12 @@ header {
         width: 95%;
         margin: 0 auto;
     }
+    .banner-content{
+        width: 100%;
+    }
 
     .banner-content h2 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .navbar {
@@ -132,29 +176,46 @@ header {
     }
 
     .nav-links {
-        gap: 50px;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
     }
 
     .nav-item {
         margin: 0;
+        font-size: ;
+    }
+    .nav-link{
+        font-size: 2rem;
     }
 
     .banner-container {
         padding-top: 30px;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .teams{
+        flex-direction: column;
     }
 
 }
 
 
 
-@media screen and (min-width:576px) and (max-width:1200px) {
-     .container {
+
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .container {
         width: 95%;
     }
+
     .navbar {
         flex-direction: column;
         gap: 20px;
     }
+
     .nav-links {
         gap: 50px;
     }
@@ -167,4 +228,11 @@ header {
         padding-top: 30px;
     }
 
+    .teams{
+        flex-direction: column;
+    }
+
+    .our-features{
+        margin: 0 auto;
+    }
 }
