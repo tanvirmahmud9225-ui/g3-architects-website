@@ -4,6 +4,7 @@
     font-family: "Work Sans", sans-serif;
 }
 
+
 /* Shared Styles */
 .display-flex {
     display: flex;
@@ -26,6 +27,7 @@
 }
 
 .container-2 {
+    width: 95%;
     max-width: 1320px;
     margin: 0 auto;
 }
@@ -48,7 +50,7 @@ main>section {
     padding-top: 130px;
 }
 
-.section-title{
+.section-title {
     font-size: 2.813rem;
     font-weight: bold;
     padding-bottom: 24px;
@@ -139,21 +141,167 @@ header {
     max-width: 100%;
 }
 
-.our-features{
+.our-features {
     max-width: 537px;
 }
 
-.primary-span{
+.primary-span {
     color: #727272;
     font-weight: 500;
 }
-.secondary-span{
+
+.secondary-span {
     color: #FF900E;
 }
-.features-description{
+
+.features-description {
     line-height: 26px;
     padding-bottom: 30px;
 }
+
+
+
+
+
+/* some facts related styles */
+.facts-content,
+.sponsor-content,
+{
+max-width: 543px;
+margin-bottom: 100px;
+}
+
+.facts-content p,
+.sponsor-content p,
+.features-content p {
+    color: #727272;
+    line-height: 26px;
+}
+
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+}
+
+
+.fact-card {
+    border: 1px solid yellowgreen;
+    max-width: 242px;
+    max-height: 242px;
+    padding: 45px 36px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fact-icon {
+    width: 46px;
+    padding-bottom: 10px;
+}
+
+.fact-number {
+    font-size: 2.8rem;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.fact-name {
+    font-size: 1.25rem;
+    color: #727272;
+    font-weight: 600;
+}
+
+/* Sponsor Related Styles */
+.sponsor-content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sponsor-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sponsor-icon img {
+    filter: grayscale(100%);
+    margin: 0 auto;
+}
+
+/* Footer related styles */
+.footer {
+    margin-top: 130px;
+    margin-bottom: 216px;
+}
+
+footer {
+    background-color: #FFF4E7;
+    border-radius: 10px;
+}
+
+footer p {
+    padding: 40px 0px;
+    text-align: center;
+    color: #424242;
+    font-size: 1.25rem;
+}
+
+
+/* features sectiion styles */
+.features{
+    gap: 140px;
+}
+.features-content {
+    max-width: 586px;
+    padding: 40px 0px;
+}
+
+.section-discription {
+    margin-bottom: 30px;
+}
+
+.features-content h2 {
+    border-left: 5px solid #FF900E;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+    padding-left: 24px;
+}
+
+.feature-card {
+    margin-top: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.068), 0px 0px 10px rgba(0, 0, 0, 0.027);
+    padding: 30px 40px 30px 30px;
+    border-radius: 10px;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    padding-bottom: 10px;
+}
+
+.experience-badge {
+    padding: 48px;
+    background-color: #FF900E;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    line-height: 3.5rem;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+#experience-year {
+    font-size: 4rem;
+    font-weight: 600;
+}
+#experience{
+    font-size: 1.563rem;
+}
+
+
+
 
 /* Responsive Design */
 @media screen and (max-width:576px) {
@@ -161,7 +309,13 @@ header {
         width: 95%;
         margin: 0 auto;
     }
-    .banner-content{
+
+    .container-2 {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .banner-content {
         width: 100%;
     }
 
@@ -184,20 +338,32 @@ header {
         margin: 0;
         font-size: ;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 2rem;
     }
 
     .banner-container {
         padding-top: 30px;
     }
-    .team-img-container{
+
+    .team-img-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .teams{
+
+    .teams {
         flex-direction: column;
     }
 
+    .facts-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .fact-card {
+        margin: 0 auto;
+        width: 100%;
+    }
 }
 
 
@@ -205,7 +371,7 @@ header {
 
 
 
-@media screen and (min-width:576px) and (max-width:992px) {
+@media screen and (min-width:577px) and (max-width:992px) {
     .container {
         width: 95%;
     }
@@ -227,11 +393,26 @@ header {
         padding-top: 30px;
     }
 
-    .teams{
+    .teams {
         flex-direction: column;
     }
 
-    .our-features{
+    .our-features {
         margin: 0 auto;
+    }
+
+    .facts-content {
+        margin-bottom: 50px;
+    }
+
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .fact-card {
+        margin: 0 auto;
+        max-width: 442px;
+        max-height: 242px;
     }
 }
